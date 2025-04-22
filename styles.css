@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f4ef; 
+    color: #333;
+}
+
+header {
+    background-color: #f7f4ef; 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #D8A25E; 
+    font-family: 'DM Serif Display', serif; 
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px; 
+    height: 90px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 0.5rem; 
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #D8A25E; 
+    font-family: 'Playfair Display', serif; 
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.hero {
+    background-color: #D8A25E; 
+    color: #fff;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'DM Serif Display', serif; 
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif; 
+
+}
+
+.recipe-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px; 
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    margin: 1rem 0;
+    color: #D8A25E; 
+    font-family: 'DM Serif Display', serif; 
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); 
+}
+
+.view-recipe {
+    background-color: #D8A25E; 
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Playfair Display', serif; 
+
+}
+
+.view-recipe:hover {
+    background-color: #b58345; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    text-align:center;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #D8A25E; 
+}
+
+footer {
+    background-color: #f7f4ef; 
+    color: #D8A25E; 
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-family: 'Playfair Display', serif; 
+
+}
