@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elATEd</title>
+    <!-- Linking both DM Serif Display and Playfair Display -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo"><img src="images/logo.jpg" alt="elATEd Logo"/>elATEd</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="hero-title">Welcome to elATEd!</h2>
+        <p>Documenting my recipes for you.</p>
+    </section>
+
+    <section class="recipe-section">
+        <div class="recipe-card">
+            <img src="images/bananabread.jpg" alt="Banana Bread">
+            <h3>Banana Bread</h3>
+            <button class="view-recipe" onclick="showRecipe('bananabread')">View Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <img src="images/choux.jpg" alt="Choux au Craquelin">
+            <h3>Choux au Craquelin</h3>
+            <button class="view-recipe" onclick="showRecipe('choux')">View Recipe</button>
+        </div>
+        <div class="recipe-card">
+            <img src="images/doublechoccookies.jpg" alt="Double Chocolate Chip Cookies">
+            <h3>Double Chocolate Chip Cookies</h3>
+            <button class="view-recipe" onclick="showRecipe('doublechoccookies')">View Recipe</button>
+        </div>
+    </section>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="recipeTitle"></h3>
+            <p id="recipeContent"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 elATEd | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
